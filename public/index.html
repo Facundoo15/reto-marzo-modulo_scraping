@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resultados Scraping Tottus</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th {
+      background-color: #2e7d32;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    img {
+      width: 50px;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .flexible-si {
+      color: #2e7d32;
+      font-weight: 600;
+    }
+
+    .flexible-no {
+      color: #c62828;
+      font-weight: 600;
+    }
+
+    .flexible-error {
+      color: #f39c12;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Resultados del Scraping - Tottus</h1>
+  <table id="productos">
+    <thead>
+      <tr>
+        <th>Imagen</th>
+        <th>Nombre</th>
+        <th>Marca</th>
+        <th>Precio</th>
+        <th>Flexible</th>
+        <th>Categoría</th>
+        <th>Enlace</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    fetch("data/productos.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const tbody = document.querySelector("#productos tbody");
+        data.forEach((p) => {
+          const flexClass =
+            p.flexible === "Sí"
+              ? "flexible-si"
+              : p.flexible === "No"
+              ? "flexible-no"
+              : "flexible-error";
+
+          const fixedLink = p.link.replace("https://tottus.falabella.com.pehttps://", "https://");
+
+          const row = `
+          <tr>
+            <td><img src="${p.image !== "Sin imagen"
+              ? p.image
+              : "https://via.placeholder.com/60"
+            }" alt="Imagen"></td>
+            <td>${p.name}</td>
+            <td>${p.brand}</td>
+            <td>${p.price}</td>
+            <td class="${flexClass}">${p.flexible}</td>
+            <td>
+              ${p.category}<br>
+              ${p.subcategory !== "Sin subcategoría" ? p.subcategory : ""}
+            </td>
+            <td><a href="${fixedLink}" target="_blank">Ver</a></td>
+          </tr>
+        `;
+          tbody.insertAdjacentHTML("beforeend", row);
+        });
+      });
+  </script>
+</body>
+
+</html>

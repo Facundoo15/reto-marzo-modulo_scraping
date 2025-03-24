@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "project-reto-marzo-krowdy",
+  "private_key_id": "7f91aad9791d856ac56a614a5ff1b20d3dc815a3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCDd7/ahomySe1\nmpV7xQ7WH8jqSAlH1mq0LiyW8M07QpP7qJ0JydFsOu8HX8iMrPift4WZWGuX/by7\nGUgQJx/aH3ncWqqtg/L+yJWbZjPVkBAtPINlKRwmF4gbt3CA4qO5zXB1eQ5IG9xr\nCMFroyOrQ1ngpsZXJyu7jC+0PjqoJAkPRME8U1yc6xt7c72Bnu9gdrFX9wr1X9Q6\nFjRKbiWD3HNPLvXHO48ROQ+Jb2WYFkIKLuE9oqCX6k1EtA4yNJ9CLNPnKTUQCTk7\nu2/hy1P0If6/N6KGtLcezTgkHl7VC0huJrcz+Dmdj3LVWGWP3QqEseqUHkZoWgmh\nUtMvbJA7AgMBAAECggEADviC+7Fz0woxxhDm92V8f4h0N57XGHOyR7RIPFzXeHrq\nb7/SXa70OSVSy37YOgIeLDQ8Wlg39MHejZClvplGG83R2O4lvL0xQfa3lAWOeitj\nFBpXCLbjNQ0bswez5j2V4/+1bVqpf2am2psSUPuFBPFtPaegJZkgBpgKFh226MG8\nb7vuSA8aJ36oVIY43ZE2sOt3/EewHrtoZ99QS2qGq8NJitM6RxvptPcxjiCthawM\nyBE/x2nD/y6EBfxsaph/c+cFhHSiqKxjMjm1WS75ATMMkBKNyGMomYu09DlHNoHT\n3es8SgJkZheRK/CpzugP0hkLv/I4xONxAchrLvAYAQKBgQDx46ATcdUG+Hr3aJx/\nuYTGfSezNYh+zA3zAks2SK8ZtU3lZWP/gAQ5WAI8jTO08OBZuiYJA3znl+NvNvYE\nAlVX76m7keAD7vvBXN4qlol9ec/LIVF28BgNP6vJ8m+7PW/UAfPBu3TNE6p35e1S\n+MjqesVt8SrRoF7OnhOn2hz2CwKBgQDNX+C6jQ5szU7vQRdfnXcb0WBdVkvk80SO\na0AMC7rjys/n7tEvRhey1/QQSRUGNH+BN9SZaKbD44uQ3Ryz9UtTqA7FHn5Mz0cy\nRRjWKQNY5kSK89E3L62gUSPv0V3bgHdIsEuOUbGuihlFSg88vQ9ULr2bxrMD0EZG\nFwXNy9QckQKBgCmVy5hsMoZ/Q4yzVGx09Ym2TJP3uR6rcB5+H3YWqtvNmrW8Z6Ou\nW4uMQN4uHFyYKMnkQdO84MVkDHq7RTJNQGTc1B5mJtAmTuvgTmWd+cczoPC4Kqw6\n/LeSYbNXVbQoDMizCTgeRSdYoS75vYJNOSVus/CBzK27V3FIJfLugZofAoGBALbA\nkKuwhZuP/qOsmm39I1ZftI6aEiMDzoelLHMLpRy7BtLukrqsdr4wqQAs6EaDRMrp\nsYdptqwtua4I9Fe2+XbR34LNJbqX4FT9Y6J/EHl1Pp0fZZbkGG7GhWIMPqbq5DqM\nlk9opuIYBXDA/FoiKpfQl+0cnYPRPBd2uTVuIavhAoGAVhRo8gAIE2xk16b8VBPB\n31//fbz4A3sK/sJDMFHkvb6x2yLCObGGWlzfg9Sy9hnv3Lwkkd/yp7P/2xF9j2sP\nrm3vaSTYoX6CuZjgfD8mDhse8LoTh649MbNswRiky4YgEnoJh9L0rjH8iMVPKXGu\nbf4NYG5A4txh8J4afLimxxw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "angulo-vision-service@project-reto-marzo-krowdy.iam.gserviceaccount.com",
+  "client_id": "111409932746981801985",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/angulo-vision-service%40project-reto-marzo-krowdy.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
